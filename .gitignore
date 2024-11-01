@@ -1,0 +1,27 @@
+# Ignore Terraform's local data
+**/.terraform/*
+
+# Ignore state files that contain environment-specific details
+*.tfstate
+*.tfstate.*
+
+# Ignore crash log files created by Terraform
+crash.log
+crash.*.log
+
+# Ignore auto-loaded variables, which might contain sensitive data
+*.auto.tfvars
+
+# Ignore override files, typically used for local development settings
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore Terraform configuration files
+.terraformrc
+terraform.rc
+
+# Ignore other potential environment-specific files
+.envrc
+*.env
